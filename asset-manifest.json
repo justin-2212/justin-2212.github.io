@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c430cd7d.chunk.css",
-    "main.js": "/static/js/main.7f3a70ad.chunk.js",
-    "main.js.map": "/static/js/main.7f3a70ad.chunk.js.map",
+    "main.js": "/static/js/main.927dd6a3.chunk.js",
+    "main.js.map": "/static/js/main.927dd6a3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8e8d6576.js",
     "runtime-main.js.map": "/static/js/runtime-main.8e8d6576.js.map",
     "static/js/2.9c2ebffd.chunk.js": "/static/js/2.9c2ebffd.chunk.js",
@@ -27,13 +27,12 @@
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb2.svg",
     "static/media/resume.8aa0a3c8.pdf": "/static/media/resume.8aa0a3c8.pdf",
     "static/media/skill.svg": "/static/media/skill.35a14766.svg",
-    "static/media/TalkCard.scss": "/static/media/talksCardBack.73ed1545.svg",
-    "static/media/udemy.11a3fcce.jpg": "/static/media/udemy.11a3fcce.jpg"
+    "static/media/TalkCard.scss": "/static/media/talksCardBack.73ed1545.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.8e8d6576.js",
     "static/js/2.9c2ebffd.chunk.js",
     "static/css/main.c430cd7d.chunk.css",
-    "static/js/main.7f3a70ad.chunk.js"
+    "static/js/main.927dd6a3.chunk.js"
   ]
 }
