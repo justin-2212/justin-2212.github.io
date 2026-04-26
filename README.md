@@ -1,103 +1,256 @@
-# Software Developer Folio ⚡️ [![GitHub](https://img.shields.io/github/license/saadpasta/developer-portfolio?color=blue)](https://github.com/saadpasta/developerFolio/blob/master/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/saadpasta/developerFolio)](https://github.com/saadpasta/developerFolio/stargazers)  [![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+# Justin's Portfolio 🚀
 
-## A clean, beautiful and responsive portfolio template for Developers!
+A modern, responsive personal portfolio website showcasing skills, experience, and projects.
 
+**[View Live](https://justin-2212.github.io)** | **[Report Bug](https://github.com/justin-2212/justin-2212.github.io/issues)** | **[Request Feature](https://github.com/justin-2212/justin-2212.github.io/issues)**
 
-<p align="center">
-  <kbd>
-<img src="https://user-images.githubusercontent.com/53429438/106779355-e9cd9e80-666c-11eb-9417-8a4b54441bc6.gif"></img>
-  </kbd>
-</p>
+---
 
+## 📋 Table of Contents
 
-Just change `src/portfolio.js` to get your personal portfolio. Customize portfolio theme by using your own color scheme globally in the  `src/_globalColor.scss` file. Feel free to use it as-is or personalize it as much as you want.
+- [About](#about)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Configuration](#configuration)
+- [Development](#development)
+- [Build & Deployment](#build--deployment)
+- [Environment Variables](#environment-variables)
+- [Technologies](#technologies)
+- [License](#license)
 
-If you'd like to **contribute** and make this much better for other users, have a look at [Issues](https://github.com/saadpasta/developerFolio/issues).
+---
 
-Created something awesome for your fork of the portfolio and want to share it? Feel free to open a [pull request](https://github.com/saadpasta/developerFolio/pulls).
+## About
 
-## Table of Contents
-- [Sections](#sections)
-- [Getting Started](#getting-started)
-- [How to Use](#how-to-use)
-- [Linking portfolio to GitHub](#linking-portfolio-to-github)
-- [Linking blogs section to Medium](#linking-blogs-section-to-medium)
-- [Change and Customize](#change-and-customize-every-section-according-to-your-need)
-- [Deployment](#deployment)
-- [Technologies Used](#technologies-used)
-- [Illustrations](#illustrations)
-- [For the Future](#for-the-future)
-- [Contributors](#project-maintainers)
+A clean, beautiful, and responsive portfolio website built with React. Designed to showcase professional profile, technical skills, work experience, projects, achievements, and more in a modern and interactive way.
 
-## Portfolio Sections
-✔️ Summary and About me\
-✔️ Skills\
-✔️ Education\
-✔️ Work Experience\
-✔️ Open Source Projects Connected with GitHub\
-✔️ Big Projects\
-✔️ Achievements And Certifications 🏆\
-✔️ Blogs\
-✔️ Talks\
-✔️ Podcast\
-✔️ Contact me\
-✔️ Twitter Timeline\
-✔️ GitHub Profile
+---
 
-To view a live example, **[click here](https://developerfolio.js.org/)**.
+## Features
 
+- ✨ **Responsive Design** - Works seamlessly on desktop, tablet, and mobile devices
+- 🎨 **Customizable Themes** - Easy color scheme customization via SCSS
+- 📱 **GitHub Integration** - Display GitHub profile and repositories in real-time
+- 📝 **Blog Support** - Integrated blog section for sharing knowledge
+- 🏆 **Achievement Showcase** - Highlight certifications and accomplishments
+- 💼 **Experience Timeline** - Display work history and education
+- 🔗 **Social Media Links** - Easy integration with multiple platforms
+- 🎭 **Smooth Animations** - Lottie animations for enhanced UX
+- 🌗 **Dark/Light Mode** - Toggle between themes
+- ⚡ **Performance Optimized** - Fast loading and smooth interactions
 
-## Getting Started
+---
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Prerequisites
 
-You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer or use [Docker](https://www.docker.com/products/docker-desktop).
+Ensure you have the following installed on your system:
 
-```
-node@v10.16.0 or higher
-npm@6.9.0 or higher
-git@2.17.1 or higher
-```
-### Docker Commands
+- **Node.js** v14.0.0 or higher
+- **npm** v6.9.0 or higher (or **yarn**)
+- **Git** v2.17.1 or higher
 
-```
-1) BUILD IMAGE : docker build -t developerfolio:latest .
-2) RUN IMAGE: docker run -t -p 3000:3000 developerfolio:latest
-```
+### Optional
+- **Docker** for containerized development
 
+---
 
-## How To Use 
+## Installation
 
-From your command line, clone and run developerFolio:
+### 1. Clone the Repository
 
 ```bash
-# Clone this repository
-git clone https://github.com/saadpasta/developerFolio.git
+git clone https://github.com/justin-2212/justin-2212.github.io.git
+cd justin-2212.github.io
+```
 
-# Go into the repository
-cd developerFolio
+### 2. Setup Environment Variables
 
-# Setup default environment variables
+Copy the example environment file:
 
-# For Linux
+```bash
+# Linux/macOS
 cp env.example .env
-# For Windows
+
+# Windows (PowerShell)
 copy env.example .env
+```
 
-# Install dependencies
+### 3. Install Dependencies
+
+```bash
 npm install
+```
 
-# Start a local dev server
+---
+
+## Project Structure
+
+```
+src/
+├── containers/          # Page containers and main sections
+│   ├── Main.js         # Main wrapper component
+│   ├── greeting/       # Welcome/hero section
+│   ├── education/      # Education section
+│   ├── skills/         # Skills showcase
+│   ├── workExperience/ # Work history
+│   ├── projects/       # Projects section
+│   ├── blogs/          # Blog section
+│   └── contact/        # Contact section
+├── components/          # Reusable UI components
+│   ├── header/
+│   ├── footer/
+│   ├── button/
+│   ├── achievementCard/
+│   ├── educationCard/
+│   └── ...
+├── assets/             # Static files
+│   ├── images/
+│   ├── fonts/
+│   └── lottie/         # Lottie animations
+├── contexts/           # React contexts
+│   └── StyleContext.js # Theme context
+├── hooks/              # Custom React hooks
+│   └── useLocalStorage.js
+├── portfolio.js        # Portfolio configuration (EDIT THIS)
+├── _globalColor.scss   # Global color scheme
+├── App.js              # Main app component
+└── index.js            # Entry point
+
+build/                  # Production build output
+public/                 # Static public assets
+```
+
+---
+
+## Configuration
+
+### Customize Your Portfolio
+
+Edit [src/portfolio.js](src/portfolio.js) to update:
+
+- Personal information and summary
+- Skills and technical expertise
+- Education history
+- Work experience
+- Projects and repositories
+- Achievements and certifications
+- Social media links
+- Contact information
+
+### Customize Colors
+
+Edit [src/_globalColor.scss](src/_globalColor.scss) to change the global color scheme:
+
+```scss
+// Change primary colors
+$lightColor1: #f3f3f3;
+$lightColor2: #ecf0f1;
+// ... other color variables
+```
+
+---
+
+## Development
+
+### Start Development Server
+
+```bash
 npm start
 ```
 
-## Linking Portfolio to GitHub
+The application will open at `http://localhost:3000` with hot-reload enabled.
 
-Generate a classic GitHub personal access token following these [instructions](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#creating-a-personal-access-token-classic) (make sure you don't select any scope just generate a simple token). If you are using [GitHub Actions](#configuring-github-actions-recommended) to deploy your portfolio you can skip this section.
+### Run Tests
 
-1. Create a file called .env in the root directory of your project (if not done already in section: [How To Use](#how-to-use))
+```bash
+npm test
+```
 
-Note: Configuring environment variables before deploying your portfolio is highly recommended as some components depend on API data. 
+### Format Code
+
+```bash
+npm run format
+```
+
+### Check Code Format
+
+```bash
+npm run check-format
+```
+
+---
+
+## Build & Deployment
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `build/` directory.
+
+### Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+The portfolio will be deployed to GitHub Pages automatically.
+
+### Docker Deployment
+
+```bash
+# Build Docker image
+docker build -t portfolio:latest .
+
+# Run container
+docker run -p 3000:3000 portfolio:latest
+```
+
+---
+
+## Environment Variables
+
+Create a `.env` file in the root directory with:
+
+```env
+# GitHub API token (optional - for displaying repositories)
+REACT_APP_GITHUB_TOKEN=your_github_token_here
+
+# Your GitHub username (optional)
+REACT_APP_GITHUB_USERNAME=your_username
+```
+
+**Note:** Generate a GitHub personal access token [here](https://github.com/settings/tokens) if you want to display your repositories.
+
+---
+
+## Technologies
+
+- **Frontend Framework:** React 16.14
+- **Styling:** SCSS/Sass
+- **Build Tool:** Create React App (react-scripts 4.0.3)
+- **Animations:** Lottie React
+- **State Management:** React Context API
+- **Testing:** Jest, Enzyme
+- **Code Formatting:** Prettier
+- **Deployment:** GitHub Pages
+- **Containerization:** Docker
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 📧 Contact
+
+For any inquiries or suggestions, feel free to reach out through the portfolio website or open an issue on GitHub. 
 
 ```bash
 - DeveloperFolio
