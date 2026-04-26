@@ -1,10 +1,6 @@
 name: Build and Deploy
 env:
   CI: false
-  GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: ""
 on:
   workflow_dispatch:
   push:
@@ -16,8 +12,6 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
       - name: Setup Node.js 🔧
         uses: actions/setup-node@v3.8.1
@@ -31,9 +25,11 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
+          path: build
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: actions/deploy-pages@v2
