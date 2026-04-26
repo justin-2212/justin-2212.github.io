@@ -18,8 +18,10 @@ export default function Contact() {
         // Extract username from GitHub URL
         const githubUrl = socialMediaLinks.github;
         const username = githubUrl.split("/").pop();
-        
-        const response = await fetch(`https://api.github.com/users/${username}`);
+
+        const response = await fetch(
+          `https://api.github.com/users/${username}`
+        );
         const data = await response.json();
         setGithubProfile(data);
       } catch (error) {

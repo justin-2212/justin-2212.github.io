@@ -373,7 +373,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Interested in discussing AI/ML projects or opportunities? Feel free to reach out!",
-  number: "",
+  number: ""
   // email_address: "ngocthangchien@gmail.com"
 };
 
