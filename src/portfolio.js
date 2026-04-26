@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "AI/ML-oriented IT student 🚀 at Ho Chi Minh City University of Education, focusing on Machine Learning, Deep Learning, and data-driven solutions. Hands-on experience with CNN-based image classification and RAG-based chatbot systems. Strong self-learning and problem-solving mindset."
   ),
-  resumeLink:
-    "./resume.pdf", // Set to empty to hide the button
+  resumeLink: "./resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -54,7 +53,9 @@ const skillsSection = {
     emoji(
       "⚡ Develop deep learning models for computer vision using CNN and image classification"
     ),
-    emoji("⚡ Build RAG-based chatbot systems and LLM applications with Prompt Engineering"),
+    emoji(
+      "⚡ Build RAG-based chatbot systems and LLM applications with Prompt Engineering"
+    ),
     emoji(
       "⚡ Create data processing pipelines and train machine learning models with TensorFlow and PyTorch"
     )
@@ -123,7 +124,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Ho Chi Minh University of Education",
-      logo: require("./assets/images/hcmueLogo.webp") ,
+      logo: require("./assets/images/hcmueLogo.webp"),
       subHeader: "Bachelor of Information Technology (AI-oriented)",
       duration: "September 2023 - April 2027",
       desc: "Pursuing a strong foundation in Computer Science with focus on Artificial Intelligence, Machine Learning, and Data Science. Actively exploring modern AI systems including deep learning and large language models (LLMs).",
@@ -229,7 +230,8 @@ const bigProjects = {
   projects: [
     {
       projectName: "Fruit Ripeness Classification",
-      projectDesc: "CNN-based deep learning model to classify fruit ripeness from images. Achieved 92.33% accuracy with image preprocessing and data augmentation.",
+      projectDesc:
+        "CNN-based deep learning model to classify fruit ripeness from images. Achieved 92.33% accuracy with image preprocessing and data augmentation.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -239,7 +241,8 @@ const bigProjects = {
     },
     {
       projectName: "IT Career Mentor (RAG Chatbot)",
-      projectDesc: "AI/LLM chatbot system to recommend IT career paths (Web, Game, AI) for students. Uses RAG pipeline to retrieve and generate intelligent responses.",
+      projectDesc:
+        "AI/LLM chatbot system to recommend IT career paths (Web, Game, AI) for students. Uses RAG pipeline to retrieve and generate intelligent responses.",
       footerLink: [
         {
           name: "View on GitHub",
@@ -287,7 +290,8 @@ const achievementSection = {
 
     {
       title: "Complete Python Programming for Beginners",
-      subtitle: "Udemy Certification - Completed on March 2026. Comprehensive Python programming fundamentals.",
+      subtitle:
+        "Udemy Certification - Completed on March 2026. Comprehensive Python programming fundamentals.",
       imageAlt: "Python Logo",
       footerLink: [
         {
@@ -370,7 +374,7 @@ const contactInfo = {
   subtitle:
     "Interested in discussing AI/ML projects or opportunities? Feel free to reach out!",
   number: "",
-  email_address: "ngocthangchien@gmail.com",
+  email_address: "ngocthangchien@gmail.com"
 };
 
 // Twitter Section
