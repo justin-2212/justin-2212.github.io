@@ -20,26 +20,26 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Dao Ngoc Thang",
+  title: "Hi all, I'm Thang",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "AI/ML-oriented IT student 🚀 at Ho Chi Minh City University of Education, focusing on Machine Learning, Deep Learning, and data-driven solutions. Hands-on experience with CNN-based image classification and RAG-based chatbot systems. Strong self-learning and problem-solving mindset."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "./resume.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/justin-2212",
+  linkedin: "https://www.linkedin.com/in/nthang05/",
+  gmail: "ngocthangchien@gmail.com",
+  // gitlab: "https://gitlab.com/saadpasta",
+  // facebook: "https://www.facebook.com/saad.pasta7",
+  // medium: "https://medium.com/@saadpasta",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +49,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "AI/ML STUDENT BUILDING CNN MODELS AND RAG-BASED AI SYSTEMS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop deep learning models for computer vision using CNN and image classification"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Build RAG-based chatbot systems and LLM applications with Prompt Engineering"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Create data processing pipelines and train machine learning models with TensorFlow and PyTorch"
     )
   ],
 
@@ -65,56 +65,52 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "python",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "tensorflow",
+      fontAwesomeClassname: "fas fa-brain"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "keras",
+      fontAwesomeClassname: "fas fa-layer-group"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "pytorch",
+      fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "scikit-learn",
+      fontAwesomeClassname: "fas fa-chart-line"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "pandas",
+      fontAwesomeClassname: "fas fa-table"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "numpy",
+      fontAwesomeClassname: "fas fa-cube"
     },
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "rag",
+      fontAwesomeClassname: "fas fa-robot"
     },
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git"
+    },
+    {
+      skillName: "vscode",
+      fontAwesomeClassname: "fas fa-code"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,24 +122,25 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Ho Chi Minh University of Education",
+      logo: require("./assets/images/hcmueLogo.webp") ,
+      subHeader: "Bachelor of Information Technology (AI-oriented)",
+      duration: "September 2023 - April 2027",
+      desc: "Pursuing a strong foundation in Computer Science with focus on Artificial Intelligence, Machine Learning, and Data Science. Actively exploring modern AI systems including deep learning and large language models (LLMs).",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Studying core subjects: Data Structures & Algorithms, Database Systems, Operating Systems, and Machine Learning fundamentals",
+        "Practicing AI development using Python, TensorFlow, and PyTorch in academic and personal projects",
+        "Building experience with Git/GitHub, research reading, and model implementation for real-world AI problems"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
+    // {
+    //   schoolName: "Stanford University",
+    //   logo: require("./assets/images/stanfordLogo.png"),
+    //   subHeader: "Bachelor of Science in Computer Science",
+    //   duration: "September 2013 - April 2017",
+    //   desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+    //   descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+    // }
   ]
 };
 
@@ -153,15 +150,19 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Machine Learning", //Insert stack or technology you have experience in
+      progressPercentage: "85%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Deep Learning / Neural Networks",
+      progressPercentage: "75%"
     },
     {
-      Stack: "Programming",
+      Stack: "Data Analysis & Processing",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "RAG Systems & LLMs",
       progressPercentage: "60%"
     }
   ],
@@ -174,29 +175,40 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Year 3 - AI Specialization",
+      company: "Ho Chi Minh University of Education",
+      companylogo: require("./assets/images/hcmueLogo.webp"),
+      date: "September 2025 - Present",
+      desc: "Focusing on advanced AI and Machine Learning courses with practical projects in deep learning, neural networks, and real-world AI applications.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Advanced Machine Learning: Studying advanced ML algorithms and model optimization techniques",
+        "Deep Learning: Working with neural networks, CNNs, and RNNs using TensorFlow and PyTorch",
+        "AI Projects: Implementing end-to-end AI projects including computer vision and NLP applications"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Year 2 - Core CS Foundations",
+      company: "Ho Chi Minh University of Education",
+      companylogo: require("./assets/images/hcmueLogo.webp"),
+      date: "September 2024 - August 2025",
+      desc: "Completed foundational computer science courses including data structures, algorithms, operating systems, and database systems.",
+      descBullets: [
+        "Data Structures & Algorithms: Mastered fundamental DSA concepts and their implementations",
+        "Database Systems: Learned SQL, database design, and optimization techniques",
+        "Operating Systems: Studied OS concepts, processes, and system programming"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Year 1 - Introduction to IT",
+      company: "Ho Chi Minh University of Education",
+      companylogo: require("./assets/images/hcmueLogo.webp"),
+      date: "September 2023 - August 2024",
+      desc: "Completed introductory IT courses including programming fundamentals, discrete mathematics, and introduction to software engineering.",
+      descBullets: [
+        "Programming Fundamentals: Learned Python programming and problem-solving techniques",
+        "Mathematics for CS: Studied discrete mathematics and mathematical foundations of CS",
+        "Software Development Basics: Introduction to software engineering principles and version control"
+      ]
     }
   ]
 };
@@ -212,29 +224,26 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
+  subtitle: "AI/ML PROJECTS I HAVE DEVELOPED",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Fruit Ripeness Classification",
+      projectDesc: "CNN-based deep learning model to classify fruit ripeness from images. Achieved 92.33% accuracy with image preprocessing and data augmentation.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View on GitHub",
+          url: "https://github.com/callm3tk/fruit-ripeness-classification"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "IT Career Mentor (RAG Chatbot)",
+      projectDesc: "AI/LLM chatbot system to recommend IT career paths (Web, Game, AI) for students. Uses RAG pipeline to retrieve and generate intelligent responses.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View on GitHub",
+          url: "https://github.com/justin-2212/IT_career_mentor "
         }
       ]
     }
@@ -246,56 +255,44 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Online Certifications and Completed Courses from DeepLearning.AI, Google Cloud, and Udemy",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Supervised Machine Learning: Regression and Classification",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "DeepLearning.AI Certification - Completed on February 2026. Mastered fundamental ML algorithms and techniques.",
+      imageAlt: "Machine Learning Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View Certificate",
+          url: "https://coursera.org/share/9be64873d8b80c813fbb6394cf7cb8c7"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Retrieval Augmented Generation (RAG)",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "DeepLearning.AI Certification - Completed on April 2026. Advanced knowledge in RAG systems and LLM applications.",
+      imageAlt: "RAG and LLM Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certificate",
+          url: "https://coursera.org/share/9be64873d8b80c813fbb6394cf7cb8c7"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Complete Python Programming for Beginners",
+      subtitle: "Udemy Certification - Completed on March 2026. Comprehensive Python programming fundamentals.",
+      imageAlt: "Python Logo",
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://www.udemy.com/certificate/UC-a0e0b622-293b-4c9c-8206-b489938e39ca/"
         }
       ]
     }
@@ -309,7 +306,7 @@ const blogSection = {
   title: "Blogs",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
@@ -324,7 +321,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -343,7 +340,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -356,7 +353,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -371,19 +368,19 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Interested in discussing AI/ML projects or opportunities? Feel free to reach out!",
+  number: "",
+  email_address: "ngocthangchien@gmail.com",
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,

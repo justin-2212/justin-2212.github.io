@@ -3,6 +3,8 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import fruitImage from "../../assets/images/fruit.jpg";
+import chatbotImage from "../../assets/images/chatbot.jpg";
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
@@ -34,6 +36,8 @@ export default function StartupProject() {
 
           <div className="projects-container">
             {bigProjects.projects.map((project, i) => {
+              const projectImages = [fruitImage, chatbotImage];
+              const projectImage = projectImages[i] || project.image;
               return (
                 <div
                   key={i}
@@ -43,10 +47,10 @@ export default function StartupProject() {
                       : "project-card project-card-light"
                   }
                 >
-                  {project.image ? (
+                  {projectImage ? (
                     <div className="project-image">
                       <img
-                        src={project.image}
+                        src={projectImage}
                         alt={project.projectName}
                         className="card-image"
                       ></img>

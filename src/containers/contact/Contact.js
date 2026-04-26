@@ -33,7 +33,7 @@ export default function Contact() {
                 <>
                   <a
                     className="contact-detail"
-                    href={"tel:" + contactInfo.number}
+                    href={"tel:" + contactInfo.number.replace(/[^\d+]/g, "")}
                   >
                     {contactInfo.number}
                   </a>

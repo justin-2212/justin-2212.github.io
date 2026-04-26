@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -16,6 +16,19 @@ import {
 
 function Header() {
   const {isDark} = useContext(StyleContext);
+
+  // Fix menu checkbox state when tab regains focus
+  useEffect(() => {
+    const handleFocus = () => {
+      const menuBtn = document.getElementById("menu-btn");
+      if (menuBtn) {
+        menuBtn.checked = false;
+      }
+    };
+
+    window.addEventListener("focus", handleFocus);
+    return () => window.removeEventListener("focus", handleFocus);
+  }, []);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;

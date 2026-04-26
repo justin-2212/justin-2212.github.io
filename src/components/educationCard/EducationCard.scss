@@ -5,6 +5,13 @@
   flex-direction: row;
 }
 
+.education-card-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
 .education-card:hover + .education-card-border {
   border-color: $educationCardBorder;
   width: 100%;
@@ -41,12 +48,24 @@
 }
 
 .education-roundedimg {
-  object-fit: cover;
+  object-fit: contain;
   margin-right: 2rem;
   width: 6rem;
   height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
-  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-roundedimg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2), 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode {
+  color: $textColorDark !important;
 }
 
 .education-card-right {
