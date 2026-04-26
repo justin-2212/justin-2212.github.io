@@ -5,7 +5,7 @@ import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import deeplearning from "../../assets/images/deeplearning.png";
-import udemy from "../../assets/images/udemy.jpg";
+// import udemy from "../../assets/images/udemy.jpg";
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
   if (!achievementSection.display) {
@@ -37,7 +37,7 @@ export default function Achievement() {
           </div>
           <div className="achievement-cards-div">
             {achievementSection.achievementsCards.map((card, i) => {
-              const achievementImages = [deeplearning, deeplearning, udemy];
+              const achievementImages = [deeplearning, deeplearning, deeplearning];
               const cardImage = achievementImages[i] || card.image;
               return (
                 <AchievementCard
