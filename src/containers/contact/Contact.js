@@ -1,7 +1,7 @@
-import React, {useContext} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {illustration, contactInfo, socialMediaLinks} from "../../portfolio";
 import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -9,6 +9,29 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
+  const [githubProfile, setGithubProfile] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchGithubProfile = async () => {
+      try {
+        // Extract username from GitHub URL
+        const githubUrl = socialMediaLinks.github;
+        const username = githubUrl.split("/").pop();
+        
+        const response = await fetch(`https://api.github.com/users/${username}`);
+        const data = await response.json();
+        setGithubProfile(data);
+      } catch (error) {
+        console.error("Error fetching GitHub profile:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchGithubProfile();
+  }, []);
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main contact-margin-top" id="contact">
@@ -53,13 +76,30 @@ export default function Contact() {
             </div>
           </div>
           <div className="contact-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={email} />
+            {!loading && githubProfile ? (
+              <div className="github-profile-card">
+                <img
+                  alt={githubProfile.name || githubProfile.login}
+                  src={githubProfile.avatar_url}
+                  className="github-avatar"
+                />
+                <h2 className="github-name">{githubProfile.name || githubProfile.login}</h2>
+                <p className="github-subtitle">dev</p>
+                {githubProfile.bio && (
+                  <p className="github-bio">{githubProfile.bio}</p>
+                )}
+              </div>
             ) : (
-              <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
-              ></img>
+              <>
+                {illustration.animated ? (
+                  <DisplayLottie animationData={email} />
+                ) : (
+                  <img
+                    alt="Man working"
+                    src={require("../../assets/images/contactMailDark.svg")}
+                  ></img>
+                )}
+              </>
             )}
           </div>
         </div>
