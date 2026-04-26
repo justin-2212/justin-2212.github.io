@@ -374,7 +374,7 @@ const contactInfo = {
   subtitle:
     "Interested in discussing AI/ML projects or opportunities? Feel free to reach out!",
   number: "",
-  email_address: "ngocthangchien@gmail.com"
+  // email_address: "ngocthangchien@gmail.com"
 };
 
 // Twitter Section
