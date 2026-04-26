@@ -77,18 +77,11 @@ export default function Contact() {
           </div>
           <div className="contact-image-div">
             {!loading && githubProfile ? (
-              <div className="github-profile-card">
-                <img
-                  alt={githubProfile.name || githubProfile.login}
-                  src={githubProfile.avatar_url}
-                  className="github-avatar"
-                />
-                <h2 className="github-name">{githubProfile.name || githubProfile.login}</h2>
-                <p className="github-subtitle">dev</p>
-                {githubProfile.bio && (
-                  <p className="github-bio">{githubProfile.bio}</p>
-                )}
-              </div>
+              <img
+                alt={githubProfile.name || githubProfile.login}
+                src={githubProfile.avatar_url}
+                className="github-avatar"
+              />
             ) : (
               <>
                 {illustration.animated ? (

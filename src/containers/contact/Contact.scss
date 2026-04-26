@@ -52,54 +52,14 @@
   margin-top: -4rem;
 }
 
-/* GitHub Profile Card */
-.github-profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1.5rem;
-  margin-top: -4rem;
-  text-align: center;
-}
-
+/* GitHub Avatar */
 .github-avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5rem;
-  border: 4px solid $buttonColor;
-  transition: transform 0.3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-.github-name {
-  font-size: 28px;
-  font-weight: 600;
-  margin: 0.5rem 0;
-  color: $textColor;
-}
-
-.github-subtitle {
-  font-size: 16px;
-  font-weight: 500;
-  color: $subTitle;
-  margin: 0.5rem 0 1rem 0;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.github-bio {
-  font-size: 14px;
-  color: $subTitle;
-  max-width: 300px;
-  line-height: 1.6;
-  margin: 0;
+  margin-left: 1.5rem;
+  margin-top: -4rem;
 }
 
 /* Media Query */
